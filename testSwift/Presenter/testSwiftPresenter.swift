@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import UIKit
 
 class testSwiftPresenter: testSwiftPresenterProtocol, testSwiftInteractorOutputProtocol
 {
@@ -11,5 +12,18 @@ class testSwiftPresenter: testSwiftPresenterProtocol, testSwiftInteractorOutputP
     var interactor: testSwiftInteractorInputProtocol?
     var wireFrame: testSwiftWireFrameProtocol?
     
+    
+    
     init() {}
+    
+    func test() {
+        print("Hola mundooo!!!!!")
+//        interactor?.test3()
+//        wireFrame?.goThere()
+        createRouteWireFrame.presentcreateRouteModule(fromView: view as! UIViewController)
+    }
+    
+    func test2() {
+        
+    }
 }

@@ -8,4 +8,8 @@ import Foundation
 class testSwiftLocalDataManager: testSwiftLocalDataManagerInputProtocol
 {
     init() {}
+    
+    func saveLocal() {
+        print("Guardando local")
+    }
 }

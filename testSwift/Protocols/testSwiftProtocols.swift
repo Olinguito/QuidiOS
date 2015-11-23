@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol testSwiftViewProtocol: class
 {
@@ -11,14 +12,17 @@ protocol testSwiftViewProtocol: class
     /**
     * Add here your methods for communication PRESENTER -> VIEW
     */
+    func reloadTest()
+    
 }
 
 protocol testSwiftWireFrameProtocol: class
 {
-    static func presenttestSwiftModule(fromView view: AnyObject)
+    static func presenttestSwiftModule(fromView view: UIViewController)
     /**
     * Add here your methods for communication PRESENTER -> WIREFRAME
     */
+    func goThere()
 }
 
 protocol testSwiftPresenterProtocol: class
@@ -29,6 +33,8 @@ protocol testSwiftPresenterProtocol: class
     /**
     * Add here your methods for communication VIEW -> PRESENTER
     */
+    func test()
+    func test2()
 }
 
 protocol testSwiftInteractorOutputProtocol: class
@@ -36,6 +42,7 @@ protocol testSwiftInteractorOutputProtocol: class
     /**
     * Add here your methods for communication INTERACTOR -> PRESENTER
     */
+    
 }
 
 protocol testSwiftInteractorInputProtocol: class
@@ -46,6 +53,7 @@ protocol testSwiftInteractorInputProtocol: class
     /**
     * Add here your methods for communication PRESENTER -> INTERACTOR
     */
+    func test3()
 }
 
 protocol testSwiftDataManagerInputProtocol: class
@@ -67,4 +75,5 @@ protocol testSwiftLocalDataManagerInputProtocol: class
     /**
     * Add here your methods for communication INTERACTOR -> LOCALDATAMANAGER
     */
+    func saveLocal()
 }

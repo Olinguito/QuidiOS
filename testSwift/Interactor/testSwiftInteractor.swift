@@ -12,4 +12,9 @@ class testSwiftInteractor: testSwiftInteractorInputProtocol
     var localDatamanager: testSwiftLocalDataManagerInputProtocol?
     
     init() {}
+    
+    func test3() {
+        print("Interactor")
+        localDatamanager?.saveLocal()
+    }
 }
